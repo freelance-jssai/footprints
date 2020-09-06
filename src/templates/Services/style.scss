@@ -1,0 +1,25 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+.services {
+  .wrapper {
+    .heading {
+      text-align: center;
+    }
+
+    .services-list {
+      .card-container {
+        &:nth-child(even) {
+          .card {
+            flex-direction: row-reverse;
+            background-color: $eggshell;
+            .graphic {
+              margin-right: 0px;
+              margin-left: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

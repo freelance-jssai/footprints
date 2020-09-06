@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+
+.wrapper {
+  width: 95%;
+  max-width: 1928px;
+  margin: 0 auto;
+
+  @media (max-width: $MOBILE_BREAKPOINT) {
+    max-width: 350px;
+  }
+}

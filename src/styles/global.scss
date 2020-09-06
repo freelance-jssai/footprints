@@ -1,0 +1,115 @@
+@import './variables';
+
+:root {
+  --PERCENTAGE_REDUCTION: 0.2;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins';
+  color: $black;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $macaroni;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
+.section {
+  padding: 80px 0px;
+
+  @media (max-width: $MOBILE_BREAKPOINT) {
+    padding: 40px 0px;
+  }
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.h1 {
+  font-size: calc(60px - (var(--PERCENTAGE_REDUCTION) * 60px));
+  line-height: calc(76px - (var(--PERCENTAGE_REDUCTION) * 76px));
+
+  @media (max-width: $DESKTOP_SMALL_SCREEN_BREAKPOINT) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  @media (max-width: $TABLET_BREAKPOINT) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.h2 {
+  font-size: 32px;
+  line-height: 48px;
+
+  @media (max-width: $DESKTOP_SMALL_SCREEN_BREAKPOINT) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  @media (max-width: $MOBILE_BREAKPOINT) {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+.h3 {
+  font-size: calc(24px - (var(--PERCENTAGE_REDUCTION) * 24px));
+  line-height: calc(36px - (var(--PERCENTAGE_REDUCTION) * 36px));
+
+  @media (min-width: $DESKTOP_SMALL_SCREEN_BREAKPOINT + 1) and(max-width: $DESKTOP_BIG_SCREEN_BREAKPOINT - 1 ) {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  @media (max-width: $DESKTOP_SMALL_SCREEN_BREAKPOINT) {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+.h4 {
+  font-size: 16px;
+  line-height: 28px;
+
+  @media (max-width: $TABLET_BREAKPOINT) {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+.h5 {
+  font-size: 12px;
+  line-height: 20px;
+}

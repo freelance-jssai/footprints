@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+.card {
+  padding: 60px;
+  @include flex(space-between, center);
+  opacity: 0;
+  transition: all ease-in-out .5s;
+
+  .graphic {
+    margin-right: 30px;
+  }
+
+  .content {
+    p {
+      color: $brown-grey;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+.about-us {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    align-items: center;
+
+    .about-content {
+      text-align: center;
+    }
+  }
+}

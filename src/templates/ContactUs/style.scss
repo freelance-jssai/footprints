@@ -1,0 +1,56 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+.contact-us {
+  background: linear-gradient(to bottom, $dark-blue 200px, $white 100px);
+  .wrapper {
+    @include flex(center, center);
+    .form {
+      width: 100%;
+      max-width: 680px;
+      padding: 30px;
+      background-color: $white;
+
+      h1 {
+        margin-top: 0px;
+      }
+
+      .form-group {
+        label {
+          display: block;
+          color: $brown-grey;
+        }
+
+        input {
+          @include font(16px, 600, $black);
+          border-radius: 7px;
+          box-shadow: 0 0 1px;
+          padding: 20px 10px;
+          margin: 0px 0 16px;
+          width: 97%;
+          border: 1px solid $brown-grey;
+
+          &:focus {
+            outline: none;
+            border: 1px solid $brown-grey;
+          }
+        }
+      }
+
+      .form-button {
+        margin-top: 30px;
+        text-align: center;
+      }
+
+      button {
+        min-width: 240px;
+        padding: 10px 20px;
+        background-color: $macaroni;
+        border: 1px solid $macaroni;
+        @include font(14px, 600, $black);
+        cursor: pointer;
+        border-radius: 8px;
+      }
+    }
+  }
+}

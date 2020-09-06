@@ -1,0 +1,19 @@
+@import './variables';
+
+@mixin flex(
+  $justifyContent: flex-start,
+  $align-item: flex-start,
+  $flex-direction: row
+) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: $align-item;
+  flex-direction: $flex-direction;
+}
+
+@mixin font($size: 14px, $weight: 400, $color: $black) {
+  font-size: $size;
+  font-family: 'Poppins';
+  font-weight: $weight;
+  color: $color;
+}

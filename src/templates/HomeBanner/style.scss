@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+.home-banner {
+  background-color: $dark-blue;
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    align-items: center;
+
+    .banner-content {
+      h1,
+      p {
+        color: $white;
+      }
+    }
+  }
+}
