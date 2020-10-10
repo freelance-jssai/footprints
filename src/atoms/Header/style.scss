@@ -1,12 +1,27 @@
+@import '../../styles/variables';
+
 header {
   width: 100%;
-  position: fixed;
-  top: 0px;
+  position: absolute;
+  top: 0;
   .wrapper {
     padding: 30px 0;
     .logo {
-      img {
-        max-width: 150px;
+      max-width: 150px;
+      svg {
+        fill: $white;
+        .st0,
+        .st1,
+        .st2,
+        .st3,
+        .st4,
+        .st5,
+        .st6,
+        .st7,
+        .st8,
+        .st9 {
+          fill: #FFFFFF;
+        }
       }
     }
   }

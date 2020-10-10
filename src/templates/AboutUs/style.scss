@@ -11,5 +11,13 @@
     .about-content {
       text-align: center;
     }
+
+    .about-graphic {
+      max-width: 600px;
+
+      img {
+        width: 100%;
+      }
+    }
   }
 }

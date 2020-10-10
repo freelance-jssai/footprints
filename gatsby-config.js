@@ -18,5 +18,20 @@ module.exports = {
         path: `${__dirname}/static/assets`,
       },
     },
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: 'src/images/favicon.png'
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /images/
+        }
+      }
+    },
   ],
 }

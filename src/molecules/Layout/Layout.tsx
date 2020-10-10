@@ -1,5 +1,5 @@
 import React, { ReactNode, FC } from 'react'
-import { Seo, Header } from 'src/atoms'
+import { Seo, Header, Footer } from 'src/atoms'
 
 interface IMeta {
   property: string
@@ -18,7 +18,7 @@ const Layout: FC<IProps> = ({ title, meta, children }) => {
       <Seo title={title} meta={meta} />
       <Header />
       <main>{children}</main>
-      {/* <Footer /> */}
+      <Footer />
     </React.Fragment>
   )
 }

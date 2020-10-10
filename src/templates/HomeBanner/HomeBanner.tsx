@@ -17,6 +17,11 @@ export const _HomeBanner: FC<IProps> = ({ graphic }) => {
             Honest, righteous and to the point defines us, defines FootPrints
             Tech.
           </p>
+          <div className="form-button">
+            <a href="https://forms.gle/ikzmNASNVZEf3Tas9" target="_blank">
+              <button type="button">Get a quote</button>
+            </a>
+          </div>
         </div>
         <div className="banner-graphic">
           <img src={graphic.banner.publicURL} alt="home banner" />

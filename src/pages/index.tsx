@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import { Layout } from 'src/molecules'
-import { HomeBanner, AboutUs, Services, ContactUs } from 'src/templates'
+import { HomeBanner, AboutUs, Services } from 'src/templates'
 
 const Home: FC = () => {
   return (
@@ -19,7 +19,6 @@ const Home: FC = () => {
         ]}
       >
         <HomeBanner />
-        <ContactUs />
         <AboutUs />
         <Services />
       </Layout>

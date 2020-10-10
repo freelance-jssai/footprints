@@ -9,6 +9,22 @@
     grid-gap: 30px;
     align-items: center;
 
+    .form-button {
+      margin-top: 30px;
+      // text-align: center;
+    }
+
+    button {
+      min-width: 240px;
+      padding: 10px 20px;
+      background-color: $macaroni;
+      border: 1px solid $macaroni;
+      @include font(14px, 600, $black);
+      cursor: pointer;
+      border-radius: 8px;
+      text-transform: uppercase;
+    }
+
     .banner-content {
       h1,
       p {
