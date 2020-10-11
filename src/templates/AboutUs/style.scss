@@ -8,8 +8,13 @@
     grid-gap: 30px;
     align-items: center;
 
+    @media (max-width: $TABLET_BREAKPOINT) {
+      grid-template-columns: none;
+      grid-template-rows: 1fr;
+    }
+
     .about-content {
-      text-align: center;
+      text-align: left;
     }
 
     .about-graphic {

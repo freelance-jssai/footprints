@@ -7,6 +7,10 @@
   opacity: 0;
   transition: all ease-in-out 0.5s;
 
+  @media (max-width: $TABLET_BREAKPOINT) {
+    padding: 30px 10px;
+  }
+
   .graphic {
     margin-right: 30px;
     max-width: 400px;

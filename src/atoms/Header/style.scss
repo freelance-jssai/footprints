@@ -2,13 +2,20 @@
 
 header {
   width: 100%;
-  position: absolute;
-  top: 0;
+  background-color: $dark-blue;
   .wrapper {
-    padding: 30px 0;
+    padding: 0;
     .logo {
-      max-width: 150px;
+      @media (max-width: $TABLET_BREAKPOINT) {
+        text-align: center;
+
+        svg {
+          max-width: 150px !important;
+        }
+      }
       svg {
+        max-width: 200px;
+        max-height: 200px;
         fill: $white;
         .st0,
         .st1,
@@ -20,7 +27,7 @@ header {
         .st7,
         .st8,
         .st9 {
-          fill: #FFFFFF;
+          fill: #ffffff;
         }
       }
     }

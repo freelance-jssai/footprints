@@ -3,11 +3,17 @@
 
 .home-banner {
   background-color: $dark-blue;
+  padding-top: 0px;
   .wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
     align-items: center;
+
+    @media (max-width: $TABLET_BREAKPOINT) {
+      grid-template-columns: none;
+      grid-template-rows: 1fr;
+    }
 
     .form-button {
       margin-top: 30px;
@@ -23,6 +29,10 @@
       cursor: pointer;
       border-radius: 8px;
       text-transform: uppercase;
+
+      @media (max-width: $TABLET_BREAKPOINT) {
+        width: 100%;
+      }
     }
 
     .banner-content {

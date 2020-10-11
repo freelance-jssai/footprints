@@ -9,13 +9,33 @@
 
     .services-list {
       .card-container {
+        .card {
+          @media (max-width: $TABLET_BREAKPOINT) {
+            flex-direction: column;
+          }
+
+          .graphic {
+            @media (max-width: $TABLET_BREAKPOINT) {
+              margin: 0 0 30px 0;
+            }
+          }
+        }
         &:nth-child(even) {
           .card {
             flex-direction: row-reverse;
             background-color: $eggshell;
+
+            @media (max-width: $TABLET_BREAKPOINT) {
+              flex-direction: column;
+            }
+
             .graphic {
               margin-right: 0px;
               margin-left: 30px;
+
+              @media (max-width: $TABLET_BREAKPOINT) {
+                margin: 0 0 30px 0;
+              }
             }
           }
         }
