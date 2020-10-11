@@ -6,7 +6,7 @@ const Home: FC = () => {
   return (
     <div>
       <Layout
-        title="Home | FootPrints Tech"
+        title="Home"
         meta={[
           {
             property: 'title',
