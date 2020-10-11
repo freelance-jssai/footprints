@@ -6,6 +6,7 @@
 
 module.exports = {
   /* Your site config here */
+  pathPrefix: "/footprints",
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
