@@ -1,14 +1,18 @@
 @import '../../styles/variables';
+@import '../../styles/mixin';
 
 header {
   width: 100%;
   background-color: $dark-blue;
   .wrapper {
     padding: 0;
+    @include flex(space-between, center);
+    @media (max-width: $TABLET_BREAKPOINT) {
+      justify-content: center;
+    }
     .logo {
+      width: 150px;
       @media (max-width: $TABLET_BREAKPOINT) {
-        text-align: center;
-
         svg {
           max-width: 150px !important;
         }
@@ -30,6 +34,28 @@ header {
           fill: #ffffff;
         }
       }
+    }
+
+    .contact {
+      @media (max-width: $TABLET_BREAKPOINT) {
+        display: none;
+      }
+    }
+  }
+}
+
+.contact {
+  .whatsapp {
+    @include flex(flex-start, center);
+
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+
+    p {
+      margin-left: 10px;
+      color: $white;
     }
   }
 }

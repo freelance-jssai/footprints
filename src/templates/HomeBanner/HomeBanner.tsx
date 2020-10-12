@@ -1,6 +1,7 @@
 import React, { FC, memo } from 'react'
 import { Wrapper } from 'src/atoms'
 import { graphql, useStaticQuery } from 'gatsby'
+import Whatsapp from 'src/images/whatsapp.svg'
 import './style.scss'
 
 interface IProps {
@@ -21,6 +22,12 @@ export const _HomeBanner: FC<IProps> = ({ graphic }) => {
             <a href="https://forms.gle/ikzmNASNVZEf3Tas9" target="_blank">
               <button type="button">Get a quote</button>
             </a>
+          </div>
+          <div className="contact">
+            <div className="whatsapp">
+              <Whatsapp />
+              <p className="h4 semi-bold">+91 9029-357-493</p>
+            </div>
           </div>
         </div>
         <div className="banner-graphic">
