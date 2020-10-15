@@ -17,10 +17,7 @@ export const _Services: FC<IProps> = ({ graphic }) => {
   const services: ISerices[] = [
     {
       title: 'Web Development',
-      description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-    industry. Lorem Ipsum has been the industry's standard dummy text ever
-    since the 1500s, when an unknown printer took a galley of type and
-    scrambled it to make a type specimen book`,
+      description: `We develop a website that is simple for you as well as gives your customers the best web experience.`,
       graphic: graphic.website.publicURL
     },
     {
@@ -49,10 +46,7 @@ export const _Services: FC<IProps> = ({ graphic }) => {
     },
     {
       title: 'Graphic design',
-      description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-      industry. Lorem Ipsum has been the industry's standard dummy text ever
-      since the 1500s, when an unknown printer took a galley of type and
-      scrambled it to make a type specimen book.`,
+      description: `We believe that visuals should stand out and also convey the information, that is what we promise deliver.`,
       graphic: graphic.design.publicURL
     },
     {
